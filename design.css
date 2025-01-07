@@ -1,0 +1,48 @@
+.fonte {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 740;
+  font-style: normal;
+  width: 150px;
+}
+
+.fonte2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+  }
+
+.container {
+    display: flex;
+    align-items: flex-end;
+    height: 70px;
+    width: 100%;
+    margin-left: 30px;
+    gap: 5px;
+}
+.espaco {
+    display: flex;
+    width: 50%;
+    height: 100px;
+}
+
+.botao{
+    padding: 10px 20px;                /* Espaçamento interno */
+    font-size: 16px;                   /* Tamanho do texto */
+    color: black;                      /* Cor do texto */
+    border: none;
+    background-color: white;         /* Cor de fundo */ 
+    border-radius: 5px;                /* Bordas arredondadas */
+    cursor: pointer;                   /* Ícone de mão ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave para o hover */
+}
+.botao:hover{
+    background-color: #0056b3; /* Muda a cor ao passar o mouse */
+    transform: scale(1.1);     /* Aumenta ligeiramente o tamanho */
+}
