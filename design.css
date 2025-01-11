@@ -1,10 +1,14 @@
 .fonte {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 740;
-  font-style: normal;
-  width: 150px;
-  color: slategray;
+    display: flex;
+    font-family: "Playwrite AU SA", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    width: 110px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    height: 83px;
 }
 
 .fonte2 {
@@ -17,7 +21,7 @@
     justify-content: center;
     align-items: center;
     height: 65px;
-    color: slategray;
+    color: black;
   }
 
 .container {
@@ -29,13 +33,17 @@
     gap: 5px;
 }
 .container2 {
+    display: flex;
     height: 500px;
-    width: 100%;   
+    width: 100%; 
 }
 .espaco {
     display: flex;
     width: 50%;
     height: 100px;
+}
+.espaco2{
+    width: 300px;
 }
 
 .botao{
@@ -49,7 +57,7 @@
     transition: background-color 0.3s; /* Transição suave para o hover */
 }
 .botao:hover{
-    background-color: #0056b3; /* Muda a cor ao passar o mouse */
+    background-color: #00c3ff; /* Muda a cor ao passar o mouse */
     transform: scale(1.1);     /* Aumenta ligeiramente o tamanho */
 }
 .botaoContainer{
@@ -75,3 +83,51 @@
     width: 97%;
     height: 10px;
 }
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+.ola{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 70px;
+    height: 10px;
+    color: slategray;
+    transition: transform 0.3s ease, color 0.3s ease;
+    width: 400px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.ola:hover{
+    transform: scale(1.1);
+    color: #00c3ff;
+}
+.apresentacao2{
+    display: flex;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    width: 700px;
+    height: 200px;
+    align-items: center;
+    color: slategray;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    font-size: 30px;
+}
+
+body {
+    background-image: url('images/background.jpg'); /* Caminho da imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    height: 100vh; /* Faz o fundo ocupar a altura total da tela */
+    margin: 0; /* Remove margens padrão */
+  }
+  
