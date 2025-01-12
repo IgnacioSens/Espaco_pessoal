@@ -1,4 +1,13 @@
-.fonte {
+body {
+    background-image: url('images/background.jpg'); /* Caminho da imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    height: 95vh; /* Faz o fundo ocupar a altura total da tela */
+    margin: 0; /* Remove margens padrão */
+    overflow-x: hidden; /* Esconde o excesso horizontal */
+  }
+  .fonte {
     display: flex;
     font-family: "Playwrite AU SA", serif;
     font-optical-sizing: auto;
@@ -10,7 +19,6 @@
     align-items: center;
     height: 83px;
 }
-
 .fonte2 {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
@@ -39,13 +47,24 @@
 }
 .espaco {
     display: flex;
-    width: 850px;
+    width: 750px;
     height: 100px;
 }
 .espaco2{
-    width: 300px;
+    width: 350px;
 }
-
+.botaoContainer{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    gap: 5px;
+}
 .botao{
     padding: 10px 20px;                /* Espaçamento interno */
     font-size: 16px;                   /* Tamanho do texto */
@@ -59,19 +78,7 @@
 .botao:hover{
     background-color: #00c3ff; /* Muda a cor ao passar o mouse */
     transform: scale(1.1);     /* Aumenta ligeiramente o tamanho */
-}
-.botaoContainer{
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65px;
-    gap: 5px;
-}
+}  
 .linha1{
     display: flex;
     justify-content: center;
@@ -114,21 +121,24 @@
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    width: 700px;
-    height: 200px;
+    width: 1000px;
+    height: 100px;
     align-items: center;
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-    font-size: 30px;
+    font-size: 22px;
 }
-
-body {
-    background-image: url('images/background.jpg'); /* Caminho da imagem */
-    background-size: cover; /* Faz a imagem cobrir toda a área */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita repetição */
-    height: 95vh; /* Faz o fundo ocupar a altura total da tela */
-    margin: 0; /* Remove margens padrão */
-    overflow-x: hidden; /* Esconde o excesso horizontal */
+.apresentacao3{
+    display: flex;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    width: 1300px;
+    height: 100px;
+    align-items: center;
+    text-align: right; /* Adicione esta linha */
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    font-size: 22px;
 }
-  
