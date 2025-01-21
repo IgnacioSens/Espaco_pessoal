@@ -143,17 +143,3 @@ body {
     width: 97%;
     height: 10px;
 }
-.box-content {
-    max-height: 0; /* Começa recolhido */
-    overflow: hidden;
-    padding: 0 15px;
-    background-color: #252530;
-    transition: max-height 2s ease, padding 2s ease; /* Animação suave */
-    border-radius: 10px;
-    width: 1000px;
-  }
-  
-  .box-content.open {
-    max-height: 600px; /* Altura máxima do conteúdo expandido */
-    padding: 15px; /* Espaçamento ao expandir */
-  }

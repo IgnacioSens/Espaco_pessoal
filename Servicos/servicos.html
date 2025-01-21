@@ -16,6 +16,30 @@
             background-color: #1C1C20;
             color: white; 
         }
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
     </style>
 </head>
 <body> 
@@ -28,16 +52,36 @@
     <div class="linha1">
         <div class="linha2">
         </div>
-        </div> 
-        <div class="container3">
-            <div class="espaco3"></div>
-            <div class="box" onclick="toggleBanner(this)"><div class="espaco5"></div><p>Elaboração de Planilhas no Excel</p><div class="espaco4"></div><span class="toggle-icon">+</span></div>
-            <div class="box-content">
-                <p class="fonte3">Criação de planilhas personalizadas e otimizadas para suas necessidades! Organize dados, automatize cálculos, e visualize informações de forma clara e eficiente. Ideal para controle financeiro, gestão de projetos, relatórios profissionais, ou qualquer outro tipo de análise. Transforme seus dados em soluções práticas e estratégicas com recursos avançados como gráficos, tabelas dinâmicas e fórmulas inteligentes.</p>
-            <img src="images/Captura de tela 2025-01-12 020308.png">
-            <div class="fonte3">Exemplo com botão para atualizar média ao alterar as notas</div>
-            </div>
         </div>
-        <script src="js.js"></script>    
+        <button class="accordion">Elaboração de planilhas no Excel</button>
+        <div class="panel">
+          <p></p>
+        </div>
+        
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+          <p>Lorem ipsum...</p>
+        </div>
+        
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+          <p>Lorem ipsum...</p>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>    
 </body>
 </html>

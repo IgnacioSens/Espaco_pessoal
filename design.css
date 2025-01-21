@@ -37,6 +37,11 @@
     height: 500px;
     width: 100%; 
 }
+.container3{
+    display: flex;
+    height: 300px;
+    width: 100%; 
+}
 .espaco {
     display: flex;
     width: 850px;
@@ -130,5 +135,21 @@ body {
     height: 95vh; /* Faz o fundo ocupar a altura total da tela */
     margin: 0; /* Remove margens padrão */
     overflow-x: hidden; /* Esconde o excesso horizontal */
+}
+
+.autoria{
+    display: flex;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    width: 1650px;
+    height: 200px;
+    align-items: center;
+    text-align: right; /* Adicione esta linha */
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    justify-content: flex-end;
 }
   
