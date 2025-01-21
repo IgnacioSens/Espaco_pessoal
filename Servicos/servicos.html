@@ -11,36 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
     <title>Portfólio</title>
-    <style>
-        body {
-            background-color: #1C1C20;
-            color: white; 
-        }
-        .accordion {
-            background-color: #eee;
-            color: #444;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-            transition: 0.4s;
-        }
-
-        .active, .accordion:hover {
-            background-color: #ccc;
-        }
-
-        .panel {
-            padding: 0 18px;
-            background-color: white;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-        }
-    </style>
 </head>
 <body> 
     <div class="container">
@@ -53,20 +23,46 @@
         <div class="linha2">
         </div>
         </div>
-        <button class="accordion">Elaboração de planilhas no Excel</button>
-        <div class="panel">
-          <p></p>
-        </div>
+        <div class="container2">
+          <div class="container3">
+          <button class="accordion">Elaboração de planilhas no Excel</button>
+          <div class="panel">
+            <p>Criação de planilhas personalizadas e otimizadas para suas necessidades! Organize dados, automatize cálculos, e visualize informações de forma clara e eficiente. Ideal para controle financeiro, gestão de projetos, relatórios profissionais, ou qualquer outro tipo de análise. Transforme seus dados em soluções práticas e estratégicas com recursos avançados como gráficos, tabelas dinâmicas e fórmulas inteligentes. Profissionalismo e eficiência ao seu alcance!</p>
+            <div class="imagem">
+              <img src="images/Captura de tela 2025-01-12 020308.png">
+            </div>
+            <div class="imagem">
+             <p>Exemplo de uma planilha com botão para ajustar média</p>
+            </div> 
+          </div>
         
-        <button class="accordion">Section 2</button>
-        <div class="panel">
-          <p>Lorem ipsum...</p>
-        </div>
+          <button class="accordion">Criação de Sites</button>
+          <div class="panel">
+            <p>Transforme sua presença online com um site moderno, funcional e adaptado às suas necessidades! Oferecemos desenvolvimento de sites responsivos, rápidos e visualmente atrativos, com foco em proporcionar a melhor experiência ao usuário. Seja para promover seu negócio, portfólio ou marca pessoal, criamos soluções sob medida que destacam sua identidade.</p>
+            <div class="imagem2">
+              <img src="images/Captura de tela 2025-01-21 154905.png" class="imagem2">
+            </div>
+            <div class="imagem">
+             <p>Este portfólio é um exemplo de site</p>
+            </div>
+          </div>
         
-        <button class="accordion">Section 3</button>
-        <div class="panel">
-          <p>Lorem ipsum...</p>
+          <button class="accordion">Eletricista Residencial</button>
+          <div class="panel">
+            <p>Está enfrentando problemas elétricos em casa? Precisa de instalações seguras e profissionais? Conte com um eletricista qualificado e experiente para cuidar de tudo para você!
+            </p>
+            <p>🔌 Serviços oferecidos:
+            </p> 
+            <p>  Instalação e manutenção elétrica.</p>
+            <p>  Troca de disjuntores e quadros de distribuição.</p>
+            <p>  Instalação de tomadas, interruptores e luminárias.</p>
+            <p>  Solução de quedas de energia e curto-circuitos.</p>
+            <p>  Projetos elétricos para reformas e construções.</p>
+            <p>  🚨 Segurança em primeiro lugar!</p>
+            <p> Realizamos todos os serviços com precisão, seguindo as normas técnicas e garantindo tranquilidade e segurança para você e sua família.</p>
+          </div>
         </div>
+      </div>
         <script>
             var acc = document.getElementsByClassName("accordion");
             var i;

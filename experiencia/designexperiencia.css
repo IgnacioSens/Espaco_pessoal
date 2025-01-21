@@ -2,7 +2,7 @@ body {
     background-image: url('images/background.jpg'); /* Caminho da imagem */
     background-size: cover; /* Faz a imagem cobrir toda a área */
     background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita repetição */
+    background-repeat: repeat;
     height: 95vh; /* Faz o fundo ocupar a altura total da tela */
     margin: 0; /* Remove margens padrão */
     overflow-x: hidden; /* Esconde o excesso horizontal */
@@ -31,7 +31,13 @@ body {
     height: 65px;
     color: black;
   }
-
+.fonte3{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+}
 .container {
     display: flex;
     align-items: flex-end;
@@ -39,6 +45,21 @@ body {
     width:100%;
     margin-left: 30px;
     gap: 5px;
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 100%; 
+}
+.container3{
+    width: 1200px;
+    height: 400px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 .espaco {
     display: flex;
